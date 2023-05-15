@@ -1,6 +1,6 @@
 # TecInfo
 
-## Esse foi meu segundo projeto 100% responsivo, usando FlexBox.
+## Projeto 100% responsivo com o nome fictício TecInfo, usando FlexBox.
 
 * Todo o projeto foi desenvolvido sozinho, com habilidades recentemente adquiridas
 * Construído com HTML/CSS e JS
