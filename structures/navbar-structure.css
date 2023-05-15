@@ -1,0 +1,130 @@
+/* Variáveis */
+
+:root {
+    --spacing: 0.25rem;
+    --transition: all 0.2s linear;
+    --dark-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.56);
+}
+
+/* Estilos Gerais */
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+}
+
+/* Navbar */
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    padding: 1.6rem;
+    box-shadow: var(--dark-shadow);
+}
+
+.navbar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-header-button {
+    background: transparent;
+    border: transparent;
+    color: #00703a;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.navbar-header-button:hover {
+    color: #004222;
+    scale: (1.2);
+}
+
+.navbar-list {
+    height: 0;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.navbar-list--show-links {
+    height: 25rem;
+}
+
+.navbar-list-link {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 900;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 1.6rem;
+    color: white;
+    transition: var(--transition);
+}
+
+.navbar-list-link:hover {
+    background-color: #00703a;
+    padding-left: 3.6rem;
+}
+
+.navbar-icons {
+    display: none;
+}
+
+@media screen and (min-width: 992px) {
+    .navbar-header-button {
+        display: none;
+    }
+
+    .navbar-list {
+        height: auto;
+        display: flex;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 1.6rem;
+    }
+
+    .navbar-list-link:hover {
+        background: none;
+        padding-left: 1.6rem;
+        color: #00703a;
+    }
+
+    .navbar-icons {
+        display: flex;
+    }
+
+    .navbar-icon {
+        color: white;
+        margin-right: 2rem;
+        font-size: 2rem;
+        font-weight: 900;
+        transition: var(--transition);
+    }
+    
+    .navbar-icon:hover {
+        color: #00703a;
+    }
+}
+
+@media screen and (min-width: 1128px) {
+    .navbar-icon {
+        font-size: 2.6rem;
+    }
+}
